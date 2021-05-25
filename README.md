@@ -5,7 +5,7 @@
 
 ## Motivation
 
-I'm a co-founder at [Magico](https://www.magico.ai/). We're building an app that allows users to control their TV with simple hand gestures via the Apple Watch.
+I'm a co-founder at [🧿 Magico](https://www.magico.ai/). We're building an app that allows users to control their TV with simple hand gestures via the Apple Watch.
 So this is pretty straight forwared - I neeeded a way to send commands to an LG Smart TV via an iPhone.
 
 
@@ -46,6 +46,7 @@ class SomeClass: LgTvWebOSSwiftDelegate {
 }
 
 ```
+Make sure you set up your class as a Delegate so you can recieve the token back from the TV (and perisist it for future use).
 
 After the connection has been established you can use the following commands:
 
