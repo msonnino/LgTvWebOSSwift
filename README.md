@@ -54,16 +54,16 @@ After the connection has been established you can use the following commands:
 
 ```swift
 
-lg.senKey(.up)                              //Send an "UP" arrow button key press.
-lg.senKey(.down)                            //Send a "DOWN" arrow button key press.
-lg.senKey(.left)                            //Send a "LEFT" arrow button key press.
-lg.senKey(.right)                           //Send a "RIGHT" arrow button key press.
-lg.senKey(.home)                            //Send a "HOME" button key press.
-lg.senKey(.enter)                           //Send an "ENTER" / "SELECT" button key press.
-lg.senKey(.back)                            //Send a "BACK" / "RETURN" arrow button key press.
-lg.senKey(.volumeUp)                        //Send a "VOLUME UP" button key press.
-lg.senKey(.volumeDown)                      //Send a "VOLUME DOWN" button key press.
-lg.senKey(.mute)                            //Send a "MUTE" button key press.
+lg.sendKey(.up)                              //Send an "UP" arrow button key press.
+lg.sendKey(.down)                            //Send a "DOWN" arrow button key press.
+lg.sendKey(.left)                            //Send a "LEFT" arrow button key press.
+lg.sendKey(.right)                           //Send a "RIGHT" arrow button key press.
+lg.sendKey(.home)                            //Send a "HOME" button key press.
+lg.sendKey(.enter)                           //Send an "ENTER" / "SELECT" button key press.
+lg.sendKey(.back)                            //Send a "BACK" / "RETURN" arrow button key press.
+lg.sendKey(.volumeUp)                        //Send a "VOLUME UP" button key press.
+lg.sendKey(.volumeDown)                      //Send a "VOLUME DOWN" button key press.
+lg.sendKey(.mute)                            //Send a "MUTE" button key press.
 
 ```
 
