@@ -55,15 +55,15 @@ After the connection has been established you can use the following commands:
 ```swift
 
 lg.senKey(.up)                              //Send an "UP" arrow button key press.
-lg.senKey(.down)                            //Send an "DOWN" arrow button key press.
-lg.senKey(.left)                            //Send an "LEFT" arrow button key press.
-lg.senKey(.right)                           //Send an "RIGHT" arrow button key press.
-lg.senKey(.home)                            //Send an "HOME" button key press.
+lg.senKey(.down)                            //Send a "DOWN" arrow button key press.
+lg.senKey(.left)                            //Send a "LEFT" arrow button key press.
+lg.senKey(.right)                           //Send a "RIGHT" arrow button key press.
+lg.senKey(.home)                            //Send a "HOME" button key press.
 lg.senKey(.enter)                           //Send an "ENTER" / "SELECT" button key press.
-lg.senKey(.back)                            //Send an "BACK" / "RETURN" arrow button key press.
-lg.senKey(.volumeUp)                        //Send an "VOLUME UP" button key press.
-lg.senKey(.volumeDown)                      //Send an "VOLUME DOWN" button key press.
-lg.senKey(.mute)                            //Send an "MUTE" button key press.
+lg.senKey(.back)                            //Send a "BACK" / "RETURN" arrow button key press.
+lg.senKey(.volumeUp)                        //Send a "VOLUME UP" button key press.
+lg.senKey(.volumeDown)                      //Send a "VOLUME DOWN" button key press.
+lg.senKey(.mute)                            //Send a "MUTE" button key press.
 
 ```
 
