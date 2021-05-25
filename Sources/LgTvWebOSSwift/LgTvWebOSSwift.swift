@@ -142,7 +142,7 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
     
     //MARK: - Send Commands
     
-    func sendKey(_ key: String) {
+    func sendKey(_ key: TvKey) {
         
         self.serialQueue.async {
         
@@ -151,13 +151,39 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
                 return
             }
             
+            var keyString: String
+            
+            switch key {
+            case .up:
+                keyString = "UP"
+            case .down:
+                keyString = "DOWN"
+            case .left:
+                keyString = "LEFT"
+            case .right:
+                keyString = "RIGHT"
+            case .home:
+                keyString = "HOME"
+            case .enter:
+                keyString = "ENTER"
+            case .back:
+                keyString = "BACK"
+            case .volumeUp:
+                keyString = "VOLUMEUP"
+            case .volumeDown:
+                keyString = "VOLUMEDOWN"
+            case .mute:
+                keyString = "MUTE"
+            }
             //Keys are sent thorugh a secondery Input Socket (mouseSocket)
             if let mouseSock = self.mouseSocket {
-                mouseSock.sendKey(key)
+                mouseSock.sendKey(keyString)
             }
             
         }
     }
+
+    
     
     //MARK:- Socket Events Handlers
     
@@ -188,7 +214,7 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
                     self.token = token
                     
                     // Make sure you persist the token so you can use it next time and connect without a TV prompt.
-                    self.delegate?.didConnect(with: token)
+                    self.delegate?.lgtvDidConnect(with: token)
                 }
                 self.isConnected = true
                 self.isConnecting = false

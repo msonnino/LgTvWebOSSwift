@@ -21,3 +21,18 @@ extension StringProtocol {
     var data: Data { .init(utf8) }
     var bytes: [UInt8] { .init(utf8) }
 }
+
+//MARK: - TvKey enum
+
+enum TvKey {
+    case up
+    case down
+    case left
+    case right
+    case home
+    case enter
+    case back
+    case volumeUp
+    case volumeDown
+    case mute
+}
