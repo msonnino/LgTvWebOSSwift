@@ -17,7 +17,7 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
     
     var delegate: LgTvWebOSSwiftDelegate?
     
-    init(url: String, token: String?) {
+    public init(url: String, token: String?) {
         //Make sure you provide the device's URL as pure digits (i.e xxx.xxx.xx.xx, no "http://", etc...)
         self.url = "wss://" + url + ":3001"
         if token != nil {
