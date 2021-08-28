@@ -15,7 +15,7 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
     private var socket:WebSocket?
     private var mouseSocket: LgMouse?
     
-    var delegate: LgTvWebOSSwiftDelegate?
+    public var delegate: LgTvWebOSSwiftDelegate?
     
     public init(url: String, token: String?) {
         //Make sure you provide the device's URL as pure digits (i.e xxx.xxx.xx.xx, no "http://", etc...)
