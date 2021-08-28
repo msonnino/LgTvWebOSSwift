@@ -9,7 +9,7 @@ import Foundation
 
 //MARK: - LgTvWebOSSwiftDelegate
 
-protocol LgTvWebOSSwiftDelegate {
+public protocol LgTvWebOSSwiftDelegate {
     
     func lgtvDidConnect(with token: String)
     
