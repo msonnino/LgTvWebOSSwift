@@ -1,6 +1,8 @@
 ![LgTvWebOSSwift Banner](https://user-images.githubusercontent.com/70895232/119380019-dbad9780-bcc8-11eb-99e1-1264a9f6a0e8.png)
 # LgTvWebOSSwift
 
+# *THIS LIBRARY IS NOT MAINTAINED, BUT YOU ARE WELCOME TO USE THE SOURCE CODE HOWEVER YOU LIKE*
+
  LgTvWebOSSwift is a Swift library that allows you to simply and easily send commands from an iOS device to an LG Smart TV running WebOS.
 
 ## 🏋️‍♂️ Motivation
